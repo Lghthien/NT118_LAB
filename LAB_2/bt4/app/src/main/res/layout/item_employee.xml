@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_employee_ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="end"> <!-- Căn phải các phần tử trong LinearLayout -->
+
+    <!-- TextView hiển thị tên nhân viên -->
+    <TextView
+        android:id="@+id/item_employee_tv_fullname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Tên nhân viên"
+        android:textSize="18sp" />
+
+    <!-- TextView hiển thị "Staff" nếu nhân viên không phải là Manager -->
+    <TextView
+        android:id="@+id/item_employee_tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Staff"
+        android:textSize="16sp"
+        android:visibility="gone" /> <!-- Mặc định ẩn -->
+
+    <!-- ImageView hiển thị icon Manager nếu nhân viên là Manager -->
+    <ImageView
+        android:id="@+id/item_employee_iv_manager"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_manager"
+        android:visibility="gone" /> <!-- Mặc định ẩn -->
+</LinearLayout>

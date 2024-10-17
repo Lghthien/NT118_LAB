@@ -16,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -83,39 +84,5 @@ public class MainActivity extends AppCompatActivity {
             // Hiển thị thông tin nhân viên lên TextView
             tv_result.setText(selectedEmployee.toString());
         });
-    }
-
-    // Class Employee cơ sở
-    class Employee {
-        String ID;
-        String Name;
-        String Type;  // Thuộc tính dùng để phân biệt loại nhân viên
-        double Salary; // Thuộc tính lương
-
-        public Employee(String ID, String name, String type, double salary) {
-            this.ID = ID;
-            this.Name = name;
-            this.Type = type;
-            this.Salary = salary; // Gán lương khi khởi tạo
-        }
-
-        @Override
-        public String toString() {
-            return "Mã NV: " + ID + ", Tên NV: " + Name + ", Loại NV: " + Type + ", Lương: " + Salary;
-        }
-    }
-
-    // Lớp con cho nhân viên chính thức
-    class EmployeeFulltime extends Employee {
-        public EmployeeFulltime(String ID, String name) {
-            super(ID, name, "Chính thức", 500);  // Gán lương 500 cho nhân viên chính thức
-        }
-    }
-
-    // Lớp con cho nhân viên thời vụ
-    class EmployeeParttime extends Employee {
-        public EmployeeParttime(String ID, String name) {
-            super(ID, name, "Thời vụ", 150);  // Gán lương 150 cho nhân viên thời vụ
-        }
     }
 }
