@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Tìm các thành phần giao diện
-        TextView tv_result = findViewById(R.id.tv_result);  // Tìm TextView để hiển thị kết quả
-        ListView lv_name = findViewById(R.id.lv_name);  // Tìm ListView để hiển thị danh sách tên
-        Button btn_name = findViewById(R.id.btn_name);  // Tìm Button để xử lý khi nhấn nút thêm tên
-        EditText et_name = findViewById(R.id.et_name);  // Tìm EditText để nhập tên
+        TextView tv_result = findViewById(R.id.tv_result);
+        ListView lv_name = findViewById(R.id.lv_name);
+        Button btn_name = findViewById(R.id.btn_name);
+        EditText et_name = findViewById(R.id.et_name);
 
         ArrayList<String> nameList = new ArrayList<>();
 

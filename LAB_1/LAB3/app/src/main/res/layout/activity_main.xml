@@ -16,19 +16,19 @@
         android:text="@string/sign_in"
         android:textAllCaps="true"
         android:textSize="@dimen/text_large"
+        android:layout_marginTop="@dimen/margin_basex4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_margin="@dimen/margin_basex4"/>
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/tv_user_name"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/username"
+        android:layout_marginTop="@dimen/margin_basex4"
         app:layout_constraintTop_toBottomOf="@id/tv_sign_in"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="@dimen/margin_basex4"/>
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
         android:id="@+id/et_username"
@@ -38,6 +38,7 @@
         app:layout_constraintTop_toTopOf="@id/tv_user_name"
         app:layout_constraintStart_toEndOf="@id/tv_user_name"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
         app:layout_constraintWidth_percent="0.7"/>
 
     <TextView
@@ -45,9 +46,9 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/password"
+        android:layout_marginTop="@dimen/margin_base"
         app:layout_constraintTop_toBottomOf="@id/et_username"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_margin="@dimen/margin_base"/>
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <EditText
         android:id="@+id/et_password"
@@ -67,8 +68,8 @@
         android:padding="@dimen/margin_base"
         android:text="@string/sign_in"
         app:layout_constraintTop_toBottomOf="@id/et_password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_margin="@dimen/margin_base"/>
+        android:layout_marginTop="@dimen/margin_base"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
         android:id="@+id/btn_via_face"
@@ -78,7 +79,7 @@
         app:layout_constraintBottom_toTopOf="@id/btn_sign_up"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_margin="@dimen/margin_base"/>
+        android:layout_marginBottom="@dimen/margin_base"/>
 
     <Button
         android:id="@+id/btn_sign_up"
@@ -88,7 +89,5 @@
         android:text="SIGN UP"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_margin="@dimen/margin_base"/>
-
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

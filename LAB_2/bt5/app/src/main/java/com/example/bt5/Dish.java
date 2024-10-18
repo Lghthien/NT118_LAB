@@ -6,6 +6,7 @@ public class Dish {
     private int thumbnailResource;
     private boolean isPromotion;
 
+
     public Dish(String name, int thumbnailResource, boolean isPromotion) {
         this.name = name;
         this.thumbnailResource = thumbnailResource;
